@@ -28,5 +28,6 @@ class Manager extends User{
     constructor(name,age,password){
         super(name,age);
         this.password = password;
-    }
+    };
+
 }
