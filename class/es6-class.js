@@ -1,7 +1,7 @@
 /**
  * Created by tianzx on 2016/5/15.
  */
-
+"use strict";
 class User {
 
     constructor(name,age) {
@@ -22,7 +22,7 @@ class User {
     get info() {
         return 'name:' + this.name +' | age:' +this.age;
     }
-}
+};
 
 class Manager extends User{
     constructor(name,age,password){
@@ -30,4 +30,12 @@ class Manager extends User{
         this.password = password;
     };
 
-}
+    changePassword(password) {
+        this.password = password;
+    }
+};
+
+console.log(typeof User,typeof Manager);
+var manager = new Manager('tianzx',22,'123');
+manager.changeName('tianzx2');
+console.log(manager.info);
