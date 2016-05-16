@@ -37,4 +37,4 @@ asyncFun2(1,'a').then(function(result){
     }
 }).catch(function(error){
     console.log(error);
-})
+});
