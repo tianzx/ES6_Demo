@@ -30,3 +30,4 @@ function exec(gr){
     }
 }
 
+console.log(123);
